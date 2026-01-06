@@ -1,4 +1,4 @@
-import { Leaf, Target, Heart, Award, TrendingUp } from "lucide-react";
+import { Leaf, Target, Heart, Award, TrendingUp, MapPin } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useAuth } from "@/hooks/useAuth";
 import { supabase } from "@/integrations/supabase/client";
@@ -6,6 +6,7 @@ import { useQuery } from "@tanstack/react-query";
 import logoEcoWrap from "@/assets/logo-eco-wrap-systems.png";
 import logoEnviroX from "@/assets/logo-envirox.png";
 import logoEarthKind from "@/assets/logo-earth-kind.png";
+import WashingtonMap from "@/components/WashingtonMap";
 
 const partners = [
   { name: "Eco Wrap Systems", description: "Sustainable packaging solutions", logo: logoEcoWrap },
@@ -153,6 +154,18 @@ export default function About() {
             </Card>
           ))}
         </div>
+      </div>
+
+      {/* Location Map */}
+      <div>
+        <h2 className="text-2xl font-display font-bold mb-6 flex items-center gap-2">
+          <MapPin className="h-6 w-6 text-primary" />
+          Our Location
+        </h2>
+        <WashingtonMap />
+        <p className="text-sm text-muted-foreground mt-3 text-center">
+          EcoPackAI Headquarters - Washington, DC
+        </p>
       </div>
 
       {/* Mission */}
