@@ -21,3 +21,6 @@ The packaging industry is one of the largest contributors to global plastic wast
 <li>AI/ML: Python, TensorFlow/PyTorch (Generative Design Models)</li>
 <li>Backend: Node.js / FastAPI</li>
 <li>Database: PostgreSQL</li>
+
+<h3>Demo Video </h3>
+To view the live demo, visit: https://ecopackai.netlify.app
